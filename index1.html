@@ -1,0 +1,1061 @@
+<html>
+	<head>
+		<title>Project</title>
+		<style type="text/css">
+			body{
+					margin:0;
+					padding:0;
+			}
+			#mainarea{
+							width:1200px;
+							height:100%;
+							background:#fff;
+			}
+			#toparea{
+					width:1200px;
+					height:30px;
+					background:#fff;
+					border-bottom:solid 1px black;
+			}
+			#menuarea{
+							width:1200px;
+							height:100px;
+							background:black;
+							position:sticky;
+							top:0;
+							z-index:2000;
+			}
+			#m1{
+					width:110px;
+					height:100px;
+					background:blue;
+					margin:0px 10px 0px 100px;
+					float:left;
+			}
+			#m2{
+					width:200px;
+					height:100px;
+					background:;
+					float:left;
+			}
+			#m2 h2{
+					text-align:center;
+					color:#D5B455;
+			}
+			#m2 p{
+					text-align:center;
+					color:#D5B455;
+			}
+			#m3{
+					width:600px;
+					height:70px;
+					background:;
+					float:left;
+					margin:30px 30px 0px 120px;
+			}
+			#m3 ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+			}
+			#m3 ul li{
+					float:left;
+			}
+			#m3 ul li a:link, #m3 ul li a:visited{
+						color:#D5B455;
+						background:black;
+						text-decoration:none;
+						padding:10px 15px;
+						display:block;
+						border-right:solid 1px black;
+			}
+			#m3 ul li a:hover{
+					color:maroon;
+					background:#D5B455;
+			}
+			#m3 ul li ul{
+					display:none;
+			}
+			#m3 ul li:hover ul{
+					display:block;
+					position:absolute;
+					z-index:1000;
+			}
+			#m3 ul li:hover ul li{
+						float:none;
+			}
+			#m3 ul li:hover ul li a:link,#m3 ul li:hover ul li a:visited{
+					border:none;
+					border-bottom:solid 1px black;
+			}
+
+			#slidearea{
+							width:1200px;
+							height:150px;
+							background:yellow url('bg2.jpg') no-repeat;
+							background-size:1200px 650px;
+							padding-top:500px;
+			}
+			#slidearea h1{
+								text-align:center;
+								font:normal bold 60px verdana;
+								color:#fff;
+								margin:0;
+								padding:0;
+								background:rgba(213, 180, 85,0.1);
+								text-shadow:0 -1px 4px #fff,0 -2px 10px #ff0,0 10px 20px #ff8000,0 -18px 40px #f00;
+			}
+		#welcomearea1{
+								width:900px;
+								height:200px;
+								background:white;	
+								padding:30px 150px 0px 150px;
+			}
+			#welcomearea1 h1{
+							text-align:center;   
+						 	color: rgb(219, 168, 23);
+							font:italic bold 40px georgia;
+							padding:0;
+							margin:0;
+			}
+			#welcomearea1 p{
+							text-align:center;
+							font:normal 600 25px arial;
+							line-height:30px;    
+							color: rgb(128, 128, 128);
+			}
+			#welcomearea2{
+								width:1200px;
+								height:450px;
+								background:#fff;
+								border-bottom:solid 1px grey;
+			}
+			#welcomearea21{
+								width:300px;
+								height:300px;
+								background:white;
+								float:left;
+								margin:50px 50px 50px 50px;
+			}
+			#welcomearea21 img{
+						border-radius:100%;
+			}
+			#welcomearea22{
+								width:750px;
+								height:450px;
+								background:white;
+								float:left;
+								margin:0px 50px 0px 0px;
+			}
+			#welcomearea22 p{
+						text-align:justify;
+							font-size:22px;
+			}
+			#welcomearea22 p:first-child{
+							font-weight:bold;
+			}
+			#segmentarea{
+								width:1200px;
+								height:120px;
+								background:#fff;
+								padding-top:30px;
+			}
+			#segmentarea h1{
+							text-align:center;
+							font:normal 600 35px monospace;
+							margin:0;
+							padding:0;
+			}
+			#segmentarea p{
+							text-align:center;
+			}
+			#eventarea{
+								width:1200px;
+								height:500px;
+								background:url('bg3.jpg') no-repeat fixed;
+								background-size:cover;
+			}
+			#e1{
+								width:270px;
+								height:270px;
+								float:left;
+								background:rgba(218, 6, 32, 0.75);
+								margin:100px 25px 100px 100px;
+								border-radius:25px;
+								padding:20px 15px 10px 15px;
+			}
+			#e1 h4{
+						text-align:center;
+						color:white;
+						font-size:17px;
+						margin:0;
+						padding:0;
+						padding-bottom:10px;
+						border-bottom:dotted 1px white;
+			}
+			#e1 p{
+						color:white;
+						text-align:justify;
+						font-size:18px;
+			}
+			#e2{
+								width:280px;
+								height:260px;
+								float:left;
+								background:rgba(0, 131, 160, 0.75);
+								margin:100px 25px 100px 0px;
+								border-radius:25px;
+								padding:20px 15px 10px 15px;
+			}
+			#e2 h4{
+						text-align:center;
+						color:white;
+						font-size:17px;
+						margin:0;
+						padding:0;
+						padding-bottom:10px;
+						border-bottom:dotted 1px white;
+			}
+			#e2 p{
+						color:white;
+						text-align:justify;
+						font-size:18px;
+			}
+			#e3{
+								width:280px;
+								height:260px;
+								float:left;
+								background:rgba(255, 94, 0, 0.75);
+								margin:100px 25px 100px 0px;
+								border-radius:25px;
+								padding:20px 15px 10px 15px;
+			}
+			#e3 h4{
+						text-align:center;
+						color:white;
+						font-size:17px;
+						margin:0;
+						padding:0;
+						padding-bottom:10px;
+						border-bottom:dotted 1px white;
+			}
+			#e3 p{
+						color:white;
+						text-align:justify;
+						font-size:18px;
+			}
+			#decorarea{
+								width:1200px;
+								height:120px;
+								background:#fff;
+								padding-top:30px;
+			}
+			#decorarea h1{
+							text-align:center;
+							font:normal 600 35px monospace;
+							margin:0;
+							padding:0;
+			}
+			#decorarea p{
+							text-align:center;
+			}
+			#photoarea{
+								width:1200px;
+								height:350px;
+								background:maroon;
+			}
+			.p1{
+								width:400px;
+								height:350px;
+								background:pink;
+								float:left;
+			}
+			#planarea{
+						width:1200px;
+						height:780px;
+						background:white;
+			}
+			#plan1{
+					width:375px;
+					height:800px;
+					background:white;
+					float:left;
+			}
+			.plan11{
+					width:325px;
+					height:300px;
+					background:white;
+					border-radius:100%;
+			}
+			.plan111{
+					margin:60px 20px 60px 20px;
+					overflow:hidden;
+			}
+			 .plan111 img{
+						border-radius:100%;
+			}
+			 .plan111 img:hover{
+										transform:scale(1.2,1.2);
+			}
+			.plan112{
+					margin:20px 20px 40px 20px;
+						overflow:hidden;
+			}
+			 .plan112 img{
+						border-radius:100%;
+			}
+			 .plan112 img:hover{
+										transform:scale(1.2,1.2);
+			}
+			#plan2{
+					width:400px;
+					height:470px;
+					background:white;
+					float:left;
+					margin:150px 25px 150px 25px;
+					border:solid 3px #D5B455;
+			}
+			#plan21{
+						width:400px;
+						height:120px;
+						background:white;
+			}
+			#plan21 h1{
+							text-align:center;
+							font:normal bold 35px monospace;
+			}
+			#plan21 p{
+							text-align:center;
+							font:normal 300 25px arial;
+			}
+			#plan22{
+						width:400px;
+						height:250px;
+						background:white;
+			}
+			#plan221{
+							width:360px;
+							height:250px;
+							margin:0px 20px 80px 20px;
+			}
+			#plan23{
+						width:200px;
+						height:37px;
+						margin:30px 120px 30px 120px;
+			}
+			#plan23 a:link,#plan23 a:visited{
+					color:white;
+					text-decoration:none;
+					padding:10px 25px;
+					background:maroon;
+					border-radius:20px;
+			}
+			#plan23 a:hover{
+						color:maroon;
+						text-decoration:none;
+						background:rgba(213, 180, 85,0.5);
+			}
+			#plan23 a:active{
+						color:violet;
+			}
+
+			#plan3{
+					width:350px;
+					height:800px;
+					background:white;
+					float:left;
+			}
+			.plan31{
+					width:325px;
+					height:300px;
+					background:white;
+					margin:20px;
+					border-radius:100%;
+			}
+			.plan311{
+					margin:60px 20px 60px 20px;
+						overflow:hidden;
+			}
+			 .plan311 img{
+						border-radius:100%;
+			}
+			 .plan311 img:hover{
+										transform:scale(1.2,1.2);
+			}
+			.plan312{
+					margin:20px 20px 40px 20px;
+						overflow:hidden;
+			}
+			 .plan312 img{
+						border-radius:100%;
+			}
+			 .plan312 img:hover{
+										transform:scale(1.2,1.2);
+			}
+			#venuearea{
+							width:1200px;
+							height:650px;
+							background:#ECECEC;
+							margin-top:30px;
+							padding:30px 0px;
+			}	
+			.v1{
+					width:1200px;
+					height:50px;
+			}
+			.v1 h1{
+						text-align:center;
+						font:normal bold 35px monospace;
+			}
+			.v2{
+					width:430px;
+					height:100px;
+					margin:30px 375px 0px 395px;
+			}
+			.v2 a:link,.v2 a:visited{
+														color:white;
+														text-decoration:none;
+														padding:10px 25px;
+														background:maroon;
+														border-radius:20px;
+			}
+			.v2 a:hover{
+									color:maroon;
+									text-decoration:none;
+									background:rgba(213, 180, 85,0.5);
+			}
+			.v2 a:active{
+									color:blue;
+			}
+			.v3{
+					width:305px;
+					height:270px;
+					background:pink;
+					float:left;
+					border:solid 10px white;
+			}
+			.v31{
+						margin:0px 25px 0px 80px;
+			}
+			.v31 img{
+						opacity:0.7;
+			}
+			.v31 img:hover{
+						opacity:1;
+			}
+			.v32{
+						margin:0px 25px 0px 0px;
+			}
+			.v32 img{
+						opacity:0.7;
+			}
+			.v32 img:hover{
+						opacity:1;
+			}
+			.v33{
+						margin:0px 40px 0px 0px;
+			}
+			.v33 img{
+						opacity:0.7;
+			}
+			.v33 img:hover{
+						opacity:1;
+			}
+			.v4{
+					width:325px;
+					height:125px;
+					background:white;
+					float:left;
+			}
+			.v41{
+						margin:0px 15px 0px 80px;
+						text-align:center;
+			}
+			.v41 a:link,.v41 a:visited{
+														color:white;
+														text-decoration:none;
+														padding:10px 25px;
+														background:maroon;
+														border-radius:20px;
+			}
+			.v41 a:hover{
+									color:maroon;
+									text-decoration:none;
+									background:rgba(213, 180, 85,0.5);
+			}
+			.v41 a:active{
+									color:blue;
+			}
+			.v42{
+						margin:0px 10px 0px 10px;
+						text-align:center;
+			}
+			.v42 a:link,.v42 a:visited{
+														color:white;
+														text-decoration:none;
+														padding:10px 25px;
+														background:maroon;
+														border-radius:20px;
+			}
+			.v42 a:hover{
+									color:maroon;
+									text-decoration:none;
+									background:rgba(213, 180, 85,0.5);
+			}
+			.v42 a:active{
+									color:blue;
+			}
+			.v43{
+						margin:0px 10px 0px 15px;
+						text-align:center;
+			}
+			.v43 a:link,.v43 a:visited{
+														color:white;
+														text-decoration:none;
+														padding:10px 25px;
+														background:maroon;
+														border-radius:20px;
+			}
+			.v43 a:hover{
+									color:maroon;
+									text-decoration:none;
+									background:rgba(213, 180, 85,0.5);
+			}
+			.v43 a:active{
+									color:blue;
+			}
+			#corporatearea{
+								width:1200px;
+								height:50px;
+								background:#fff;
+			}
+			#corporatearea h1{
+									text-align:center;
+							font:normal 600 35px monospace;
+			}
+			#corporate1{
+						width:200px;
+						height:50px;
+						margin:0px 500px 0px 500px;
+			}
+			#c1{
+					width:1200px;
+					height:550px;
+					background:#fff;
+			}
+			.c11{
+					width:370px;
+					height:400px;
+					float:left;
+					background:url('bg15.jpg');
+					background-size:370px 400px;
+					margin:75px 25px 0px 150px;
+					border-radius:20px;
+			}
+			#c111{
+						width:340px;
+						height:40px;
+						background:url('bg15.jpg');
+						border-bottom:dotted 1px white;
+						margin:0px 15px 0px 15px;
+			}
+			#c111 h2{
+						color:#fff;
+						text-align:center;
+			}
+			#c112{
+					width:340px;
+					height:310px;
+					background:pink;
+					background:url('bg15.jpg');
+					margin:0px 15px 0px 15px;
+			}
+			#c112 ul{
+					color:white;
+					list-style:none;
+					font-size:20px;
+					line-height:30px;
+			}
+			.c12{
+					width:500px;
+					height:450px;
+					float:left;
+					background:green;
+					margin:50px 150px 0px 0px;
+			}
+			#specialityarea{
+								width:1200px;
+								height:50px;
+			}
+			#specialityarea h1{
+									text-align:center;
+							font:normal 600 35px monospace;
+			}
+			#speciality1{
+						width:200px;
+						height:75px;
+						margin:0px 500px 0px 500px;
+			}
+			#s1{
+								width:1200px;
+								height:800px;
+								background:url('bg17.jpg') no-repeat scroll;
+								background-size:1200px 800px;
+			}
+			.s11{
+				width:280px;
+				height:600px;
+				float:left;
+				margin:100px 25px 100px 150px;
+			}
+			.s111{
+				width:280px;
+				height:275px;
+  				 border: dotted rgba(255, 255, 255, 0.37) 1px;
+  			 	 background: rgba(255, 255, 255, 0.11);
+				float:left;
+				margin:0px 0px 25px 0px;
+				opacity:0.7;
+			}
+			.s111:hover{
+							opacity:1;
+			}
+			#s1111{
+					width:80px;
+					height:60px;
+					margin:20px 100px 0px 100px;
+			}
+			#s1112{
+					width:250px;
+					height:30px;
+					margin:10px 15px 10px 15px;
+    					background: rgba(255, 255, 255, 0.3);
+    					border-radius:1px;
+					padding:10px 0px;
+			}
+			#s1112 h2{
+					text-align:center;
+					color:white;
+					padding:0;
+					margin:0;
+			}
+			#s1113{
+					width:250px;
+					height:115px;
+					margin:0px 15px 0px 15px;
+			}
+			#s1113 p{
+					text-align:center;
+					color:white;
+					font-size:17px;
+					line-height:22px;
+			}
+			.s12{
+				width:280px;
+				height:600px;
+				float:left;
+				margin:100px 25px 100px 0px;
+			}
+			.s121{
+				width:280px;
+				height:275px;
+  				 border: dotted rgba(255, 255, 255, 0.37) 1px;
+  			 	 background: rgba(255, 255, 255, 0.11);
+				float:left;
+				margin:0px 0px 25px 0px;
+				opacity:0.7;
+			}
+			.s121:hover{
+							opacity:1;
+			}
+			#s1211{
+					width:80px;
+					height:60px;
+					margin:20px 100px 0px 100px;
+			}
+			#s1212{
+					width:250px;
+					height:40px;
+					margin:10px 15px 10px 15px;
+    					background: rgba(255, 255, 255, 0.3);
+    					border-radius: 1px;
+			}
+			#s1212 h2{
+					text-align:center;
+					color:white;
+			}
+			#s1213{
+					width:250px;
+					height:115px;
+					margin:0px 15px 0px 15px;
+			}
+			#s1213 p{
+					text-align:center;
+					color:white;
+					font-size:17px;
+					line-height:22px;
+			}
+			.s13{
+				width:280px;
+				height:600px;
+				float:left;
+				margin:100px 150px 100px 0px;
+			}
+			.s131{
+				width:280px;
+				height:275px;
+  				 border:dotted rgba(255, 255, 255, 0.37) 1px;
+  			 	 background:rgba(255, 255, 255, 0.11);
+				float:left;
+				margin:0px 0px 25px 0px;
+				opacity:0.7;
+			}
+			.s131:hover{
+							opacity:1;
+			}
+			#s1311{
+					width:80px;
+					height:60px;
+					margin:20px 100px 0px 100px;
+			}
+			#s1312{
+					width:250px;
+					height:40px;
+					margin:10px 15px 10px 15px;
+    					background: rgba(255, 255, 255, 0.3);
+    					border-radius:1px;
+			}
+			#s1312 h2{
+					text-align:center;
+					color:white;
+			}
+			#s1313{
+					width:250px;
+					height:115px;
+					margin:0px 15px 0px 15px;
+			}
+			#s1313 p{
+					text-align:center;
+					color:white;
+					font-size:17px;
+					line-height:22px;
+			}
+			#contactarea{
+							width:1200px;
+							height:50px;
+							background:#fff;
+							margin-top:50px;
+			}
+			#contactarea h1{
+								text-align:center;
+							font:normal 600 35px monospace;
+			}
+			#contactarea1{
+						width:200px;
+						height:75px;
+						margin:0px 500px 0px 500px;
+			}
+			#contactarea2{
+						width:1200px;
+						height:900px;
+						background:#F1F1F1;
+						padding-top:30px;
+			}
+			#contactarea21{
+						width:300px;
+						height:50px;
+						margin:0px 450px 0px 450px;
+						padding-bottom:30px
+			}
+			#contactarea21 h1{
+						text-align:center;
+						color:#D5B455;
+						border-bottom:double black;
+						font:normal bold 40px arial;
+			}
+			#contactarea22{
+						width:800px;
+						height:320px;
+						margin:0px 200px 0px 200px;
+						padding-bottom:30px;
+			}
+			#lastarea{
+					width:1200px;
+					height:50px;
+					background:#2B2626;
+			}
+			@media print{
+					#toparea,#menuarea{
+								display:none;
+					}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+			</div>
+			<div id="menuarea">
+				<div id="m1">
+					<img src="logo.jpg" width="100%" height="100%"/>
+				</div>
+				<div id="m2">
+					<h2>R.K Tent</h2>
+					<p>Make your events special</p>
+				</div>
+				<div id="m3">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="service.html">SERVICES</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="#">OWNER</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="slidearea">
+				<h1>EVENTS PLANNER</h1>
+			</div>
+			<div id="welcomearea1">
+				<h1>Welcome to R.K Tent House!!</h1>
+				<p>RTH is a wedding designing and event planning company, set up almost three decades ago
+with an extensive in - house production facility, from idea to reality, from fabric to upholstery
+and from flowers to lighting.</p>
+			</div>
+			<div id="welcomearea2">
+				<div id="welcomearea21">
+					<img src="bg1.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div id="welcomearea22">
+					<p>“R.K Tent House is committed to excellence and offers you the world-class decoration, Tents, and Catering Management Services for your wedding ceremony, religious, parties, events, etc."</p>
+					<p>We are one of the leading Canvas and Catering Services providers in Jamshedpur and we offer event management services comprising a wide range of well designed and customizable packages as per the requirements of large institutions, clubs, corporate houses, hotels, and private party, etc. The services offered by us are wholesome, well delivered, reliable, and can be availed at a very short notice period that has gained us widespread popularity among clients in the domestic market.</p>
+					<p>We offer a range of services, basically categorized as tentage and catering services, to serve efficiently and reliably for all occasions. In the tentage services, we offer Tent Erection, Lighting, Floral Decorations, Sound Systems, DJ, Dance floors for occasions such as  Reception Parties, Marriages, Fairs, and Family Functions, etc.</p>
+				</div>
+			</div>
+			<div id="segmentarea">
+				<h1>Our Segments</h1>
+				<p><img src="icon.jpg"/></p>
+			</div>
+			<div id="eventarea">
+				<div id="e1">
+						<h4>&hearts; WEDDING DECOR & TENTING</h4>
+						<p>We specialize in "Wedding Decor Design". We at RTH believe in the beauty of our client's dreams and our work is a leap of imagination which brings happiness and joy to them. Every bit of wedding design is the cumulative effect of a large infrastructure thus allowing us to control our quality and clients satisfaction.</p>
+				</div>
+				<div id="e2">
+						<h4>&hearts; DESTINATION WEDDINGS</h4>
+						<p>Be it in India or overseas, RTH will take complete control of the event including assistance in selection of destination & Venue, decor, F&B, entertainment etc. Our years of experience in marriage logistics helps us plan and execute destination weddings without a flaw.</p>
+				</div>
+				<div id="e3">
+						<h4>&hearts; CORPORATE EVENTS</h4>
+						<p>RTH specializes in organizing customized Corporate Events, Award Functions, Musical Nights, Exhibitions & Stall Designing on pan India basis.</p>
+				</div>
+			</div>
+			<div id="decorarea">
+				<h1>Wedding Decor & Tenting</h1>
+				<p><img src="icon.jpg"/></p>
+			</div>
+			<div id="photoarea">
+				<div class="p1">
+					<img src="bg4.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div class="p1">
+					<img src="bg5.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div class="p1">
+					<img src="bg6.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+			</div>
+			<div id="planarea">
+				<div id="plan1">
+					<div class="plan11 plan111">
+						<img src="bg7.jpg" width="100%" height="100%" title="EGAGEMENT" alt="photo"/>
+					</div>
+					<div class="plan11 plan112">
+						<img src="bg9.jpg" width="100%" height="100%" title="HALDI" alt="photo"/>
+					</div>
+				</div>
+				<div id="plan2">
+					<div id="plan21">
+						<h1>Plan a Marriage</h1>
+						<p>WITH US</p>
+					</div>
+					<div id="plan22">
+						<div id="plan221">
+							<img src="bg11.jpg" width="100%" height="100%" title="WEDDING" alt="photo"/>
+						</div>
+					</div>
+					<div id="plan23">
+						<a href="#">BOOK NOW</a>
+					</div>
+				</div>
+				<div id="plan3">
+					<div class="plan31 plan311">
+						<img src="bg10.jpg" width="100%" height="100%" title="MEHNDI" alt="photo"/>
+					</div>
+					<div class="plan31 plan312">
+						<img src="bg8.jpg" width="100%" height="100%" title="RECEPTION" alt="photo"/>
+					</div>
+				</div>
+			</div>
+			<div id="venuearea">
+				<div class="v1">
+					<h1>VENUES</h1>
+				</div>
+				<div class="v2">
+					<a href="#">LOCAL</a>
+					<a href="#">NATIONAL</a>
+					<a href="#">INTERNATIONAL</a>
+				</div>
+				<div class="v3 v31">
+					<img src="bg12.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div class="v3 v32">
+					<img src="bg14.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div class="v3 v33">
+					<img src="bg13.jpg" width="100%" height="100%" title="R.K Tent House" alt="photo"/>
+				</div>
+				<div class="v4 v41">
+					<h3>THE BIZTON</h3>
+					<a href="https://thebizton.com/">KNOW MORE</a>
+				</div>
+				<div class="v4 v42">
+					<h3>AGRICO CLUB HOUSE</h3>
+					<a href="https://www.shaadicart.com/vendor/3720/agrico-club-house">KNOW MORE</a>
+				</div>
+				<div class="v4 v43">
+					<h3>BISTUPUR CLUB HOUSE</h3>
+					<a href="https://www.shaadicart.com/vendor/3722/bistupur-club-house">KNOW MORE</a>
+				</div>
+			</div>
+			<div id="corporatearea">
+				<h1>CORPORATE EVENTS</h1>
+			</div>
+			<div id="corporate1">
+				<img src="icon.jpg"/>
+			</div>
+			<div id="c1">
+				<div class="c11">
+					<div id="c111">
+						<h2>WE OFFER</h2>
+					</div>
+					<div id="c112">
+						<ul>
+							<li>Events / Exhibition Hangers</li>
+							<li>Customized Exhibition Stall</li>
+							<li>Wooden Platform / Wooden Stage</li>
+							<li>Designer Country Pavilion</li>
+							<li>Scaffolding</li>
+							<li>Events / Exhibition Theme Area</li>
+							<li>Events Exhibition Gates</li>
+							<li>Temporary Kiosks</li>
+							<li>Lighting</li>
+							<li>Maxima Section Stall</li>
+						</ul>
+					</div>
+				</div>
+				<div class="c12">
+					<img src="bg16.jpg"width="100%" height="100%"/>
+				</div>
+			</div>
+			<div id="specialityarea">
+				<h1> OUR SPECIALITY</h1>
+			</div>
+			<div id="speciality1">
+				<img src="icon.jpg"/>
+			</div>
+			<div id="s1">
+				<div class="s11">
+					<div class="s111">
+						<div id="s1111">
+							<img src="proposal.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Proposal</h2>
+						</div>
+						<div id="s1113">
+							<p>With our signature Proposal Planning Service, we handle everything from start to finish so that your Best Proposal goes off without a hitch.</p>
+						</div>
+					</div>
+					<div class="s111">
+						<div id="s1111">
+							<img src="catering.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Catering</h2>
+						</div>
+						<div id="s1113">
+							<p>We suggest caterers, assist with menu planning and creating signature dishes and beverages to suit the occasion and guest profiles.</p>
+						</div>
+					</div>
+				</div>
+				<div class="s12 ">
+					<div class="s121">
+						<div id="s1111">
+							<img src="decor.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Decor & Tenting</h2>
+						</div>
+						<div id="s1113">
+							<p>From royal, vintage or a classic theme to a colorful, vibrant theme, we curate exceptional experiences, best suited to your liking.</p>
+						</div>
+					</div>
+					<div class="s121">
+						<div id="s1111">
+							<img src="photograph.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Photography</h2>
+						</div>
+						<div id="s1113">
+							<p>We want you to have the very best photographer for your wedding that will shape your memories as you look back on your photographs in the years to come.</p>
+						</div>
+					</div>
+				</div>
+				<div class="s13">
+					<div class="s131">
+						<div id="s1111">
+							<img src="entertainment.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Entertainment</h2>
+						</div>
+						<div id="s1113">
+							<p>Our wedding entertainment administrations incorporate a plenty of choices, which will make you and the guests faint with delight.</p>
+						</div>
+					</div>
+					<div class="s131">
+						<div id="s1111">
+							<img src="theme.jpg"/>
+						</div>
+						<div id="s1112">
+							<h2>Theme Parties</h2>
+						</div>
+						<div id="s1113">
+							<p>With our signature Proposal Planning Service, we handle everything from start to finish so that your Best Proposal goes off without a hitch.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contactarea"/>
+				<h1>CONTACT US</h1>
+			</div>
+			<div id="contactarea1">
+				<img src="icon.jpg"/>
+			</div>
+			<div id="contactarea2">
+				<div id="contactarea21">
+					<h1>R.K Tent House</h1>
+				</div>
+				<div id="contactarea22">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.861020309557!2d86.22835011099612!3d22.770538425600275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3d800ee6dbd%3A0xe557a96b620fb46!2sRamadhin%20Bagan%20Park!5e0!3m2!1sen!2sin!4v1700320224616!5m2!1sen!2sin" width="800" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+			<div id="lastarea">
+			</div>
+		</div>
+	</body>
+</html>
