@@ -1,0 +1,431 @@
+<html>
+	<head>
+		<title>Project</title>
+		<style type="text/css">
+			body{
+					margin:0;
+					padding:0;
+			}
+			#mainarea{
+							width:1200px;
+							height:100%;
+							background:#fff;
+							margin:0 auto;
+			}
+			#toparea{
+					width:1200px;
+					height:30px;
+					background:#fff;
+					border-bottom:solid 1px black;
+			}
+			#menuarea{
+							width:1200px;
+							height:100px;
+							background:black;
+			}
+			#m1{
+					width:110px;
+					height:100px;
+					background:blue;
+					margin:0px 10px 0px 100px;
+					float:left;
+			}
+			#m2{
+					width:200px;
+					height:100px;
+					background:;
+					float:left;
+			}
+			#m2 h2{
+					text-align:center;
+					color:#D5B455;
+			}
+			#m2 p{
+					text-align:center;
+					color:#D5B455;
+			}
+			#m3{
+					width:600px;
+					height:70px;
+					background:;
+					float:left;
+					margin:30px 30px 0px 120px;
+			}
+			#m3 ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+			}
+			#m3 ul li{
+					float:left;
+			}
+			#m3 ul li a:link, #m3 ul li a:visited{
+						color:#D5B455;
+						background:black;
+						text-decoration:none;
+						padding:10px 15px;
+						display:block;
+						border-right:solid 1px black;
+			}
+			#m3 ul li a:hover{
+					color:maroon;
+					background:#D5B455;
+			}
+			#m3 ul li ul{
+					display:none;
+			}
+			#m3 ul li:hover ul{
+					display:block;
+					position:absolute;
+					z-index:1000;
+			}
+			#m3 ul li:hover ul li{
+						float:none;
+			}
+			#m3 ul li:hover ul li a:link,#m3 ul li:hover ul li a:visited{
+					border:none;
+					border-bottom:solid 1px black;
+			}
+			#slidearea{
+							width:1200px;
+							height:500px;
+							background:yellow url('bg18.jpg') no-repeat;
+							background-size:1200px 500px;
+			}
+			#topicarea{
+							width:1200px;
+							height:100px;
+							background:rgba(213, 180, 85,0.5);
+							padding:10px 0px 20px 0px;
+			}
+			#topicarea h3{
+								padding:0;
+								margin:0;
+								text-align:center;
+								line-height:40px;
+			}
+			#topicarea a:link,#topicarea a:visited{
+					color:maroon;
+					text-decoration:none;
+			}
+			#topicarea a:hover{
+						color:#D5B455;
+						text-decoration:none;
+			}
+			#topicarea a:active{
+						color:violet;
+			}
+			#topicarea h1{
+								padding:0;
+								margin:0;
+								text-align:center;
+								font:italic bold 45px monospace;
+			}
+			#contactarea{
+								width:1200px;
+								height:550px;
+								background:#ECECEC;
+			}
+			#contact1{
+							width:550px;
+							height:550px;
+							background:;
+							float:left;
+			}
+			#c1{
+					width:350px;
+					height:60px;
+					background:#D5B455;
+					margin:50px 0px 25px 100px;
+					padding-top:25px;
+					padding-bottom:25px;
+					padding-left:25px;
+					padding-right:25px;
+					box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.66);
+			}
+			#c1 p{
+       					padding:0;
+						margin:0;
+						font:normal 200 17px arial;
+			}
+			#c2{
+					width:350px;
+					height:20px;
+					background:#D5B455;
+					margin:0px 0px 25px 100px;
+					padding:25px;
+					box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.66);
+			}
+			#c2 p{
+       					padding:0;
+						margin:0;
+						font:normal 200 17px arial;
+			}
+			#c2  a:link,#c2  a:visited{
+											color:black;
+    											text-decoration: none;
+   											transition: all 1s;
+			}
+			#c2 a:hover{
+							color:maroon;
+			}
+			#c3{
+					width:350px;
+					height:20px;
+					background:#D5B455;
+					margin:0px 0px 25px 100px;
+					padding:25px;
+					box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.66);
+			}
+			#c3 p{
+       					padding:0;
+						margin:0;
+						font:normal 200 17px arial;
+			}
+			#c3 a:link,#c3  a:visited{
+											color:black;
+    											text-decoration: none;
+   											transition: all 1s;
+			}
+			#c3 a:hover{
+							color:maroon;
+			}
+			#c4{
+					width:350px;
+					height:70px;
+					background:#D5B455;
+					margin:25px 0px 25px 100px;
+					padding-top:15px;
+					padding-bottom:10px;
+					padding-left:25px;
+					padding-right:25px;
+					box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.66);
+			}
+			#c4 p:first-child{
+       					padding:0;
+						margin:0;
+						font:normal 200 17px arial;
+						padding-bottom:20px;
+			}
+			#c4 p:nth-child(2){
+       					padding:0;
+						margin:0;
+						font:normal 200 17px arial;
+			}
+			#c4  a:link,#c4  a:visited{
+											color:black;
+    											text-decoration: none;
+   											transition: all 1s;
+			}
+			#c4 a:hover{
+							color:maroon;
+			}
+			#contact2{
+							width:550px;
+							height:500px;
+							background:;
+							float:left;
+							margin:50px 50px 0px 0px;
+			}
+			#footerarea{
+						width:1200px;
+						height:450px;
+						background:#151414;
+			}
+			#foot4{
+					width:300px;
+					height:400px;
+					background:;
+					margin:25px 0px 25px 25px;
+					float:left;
+			}
+			#foot4 h1{
+						margin:0;
+						padding:0;
+						text-align:center;
+						color:#D5B455;
+						font:normal bold 25px monospace;
+						padding-bottom:20px;
+			}
+			#foot4 p{
+						text-align:justify;
+						font:normal 300 18px arial;
+						line-height:25px;
+						color:white;
+			}
+			#foot1{
+					width:350px;
+					height:400px;
+					background:;
+					margin:25px 0px 25px 0px;
+					float:left;
+			}
+			#foot1 h1{
+						margin:0;
+						padding:0;
+						text-align:center;
+						color:#D5B455;
+						font:normal bold 25px monospace;
+						padding-bottom:20px;
+			}
+			#foot1 li{
+						list-style:none;
+						color:white;
+						font-size:20px;
+						font-weight:300;
+						margin:0;
+						padding:0;
+						padding-bottom:10px;
+						line-height:30px;
+			}
+			#foot1 li:hover{
+								color:#EDD87B;			
+			}
+			#foot1  a:link,#foot  a:visited{
+											color:white;
+    											text-decoration: none;
+   											transition: all 1s;
+			}
+			#foot1 a:hover{
+							color:#EDD87B;
+			}
+			#foot2{
+					width:200px;
+					height:400px;
+					background:;
+					margin:25px 0px;
+					float:left;
+			}
+			#foot2 h1{
+						margin:0;
+						padding:0;
+						text-align:center;
+						color:#D5B455;
+						font:normal bold 25px monospace;
+						padding-bottom:20px;
+			}
+			#foot2 ul{
+							list-style:none url('listicon.jpg') inside;
+							line-height:30px;
+							margin-left:10px;
+			}
+			#foot2 li:hover{
+								color:#EDD87B;	
+							transform:translate(10px,0);		
+			}
+			#foot2  a:link,#foot2  a:visited{
+											color:white;
+    											text-decoration: none;
+   											transition: all 1s;
+			}
+			#foot2 a:hover{
+							color:#EDD87B;
+			}
+			#foot3{
+					width:300px;
+					height:400px;
+					background:;
+					margin:25px 25px 25px 0px;
+					float:left;
+			}
+			#foot3 h1{
+						margin:0;
+						padding:0;
+						text-align:center;
+						color:#D5B455;
+						font:normal bold 25px monospace;
+						padding-bottom:20px;
+			}
+			#lastarea{
+					width:1200px;
+					height:50px;
+					background:#2B2626;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+			</div>
+			<div id="menuarea">
+				<div id="m1">
+					<img src="logo.jpg" width="100%" height="100%"/>
+				</div>
+				<div id="m2">
+					<h2>R.K Tent</h2>
+					<p>Make your wedding special</p>
+				</div>
+				<div id="m3">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="service.html">SERVICES</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="#">OWNER</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="slidearea">
+			</div>
+			<div id="topicarea">
+				<h3><a href="index.html">HOME</a></h3>
+				<h1>CONTACT</h1>
+			</div>
+			<div id="contactarea">
+				<div id="contact1">
+					<div id="c1">
+						<p><font color="maroon"><b>Address:</b></font>Ramadhin Bagan P.O-Telco P.S-Telco Jamshedpur East Singhbhum <br> Jharkhand 831004</p>
+					</div>
+					<div id="c2">
+						<p><font color="maroon"><b>Email:</b></font><a href="mailto:eshakumarijsr2gmail.com">eshakumarijsr2@gmail.com</a></p>
+					</div>
+					<div id="c3">
+						<p><font color="maroon"><b>Website:</b></font><a href="index.html">rktenthouse.in</a></p>
+					</div>
+					<div id="c4">
+						<p><font color="maroon"><b>Mobile:</b></font><a href="tel:7482825534">7482825534</a></li>
+						<p><font color="maroon"><b>Whatsapp:</b></font><a href="tel:7667017876">7667017876</a></p>
+					</div>
+				</div>
+				<div id="contact2">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.861020309557!2d86.22835011099612!3d22.770538425600275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3d800ee6dbd%3A0xe557a96b620fb46!2sRamadhin%20Bagan%20Park!5e0!3m2!1sen!2sin!4v1700320224616!5m2!1sen!2sin" width="550" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+			<div id="footerarea">
+				<div id="foot4">
+					<h1>ABOUT US</h1>
+					<p>"R.K. Tent" is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the Jamshedpur. As the leading wedding designers and event organisers in Jamshedpur, we are renowned to create authentic experiences worth cherishing for a lifetime.</p>
+				</div>
+				<div id="foot1">
+					<h1>OFFICIAL ADDRESS</h1>
+					<ul>
+						<li><font color="#D5B455">Address:</font>Ramadhin Bagan P.O-Telco P.S-Telco Jamshedpur East Singhbhum 831004</li>
+						<li><font color="#D5B455">Email:</font><a href="mailto:eshakumarijsr2gmail.com">eshakumarijsr2@gmail.com</a></li>
+						<li><font color="#D5B455">Mobile:</font><a href="tel:7482825534">7482825534</a></li>
+						<li><font color="#D5B455">Whatsapp:</font><a href="tel:7667017876">7667017876</a></li>
+					</ul>
+				</div>
+				<div id="foot2">
+					<h1>MENU</h1>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="service.html">SERVICES</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="owner.html">OWNER</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<div id="foot3">
+					<h1>HOW TO REACH US</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.861020309557!2d86.22835011099612!3d22.770538425600275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3d800ee6dbd%3A0xe557a96b620fb46!2sRamadhin%20Bagan%20Park!5e0!3m2!1sen!2sin!4v1700320224616!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+			<div id="lastarea">
+			</div>
+		</div>
+	</body>
+</html>
